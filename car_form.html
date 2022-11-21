@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Page Needs
+    ================================================== -->
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Money Store</title>
+  <meta name="description">
+  <meta name="keywords">
+  <meta name="author">
+
+  <!-- Favicons
+    ================================================== -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+  <!-- Slider
+    ================================================== -->
+  <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+  <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+  <!-- Stylesheet
+    ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/style_car_form.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="forms/src/foxholder-styles.css" />
+  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <!-- animation
+     ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <!--  forms -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="forms/src/foxholder.js"></script>
+  <script src="forms/static/scripts/script.js"></script>
+  <!-- calendar -->
+  <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+  <!-- <script src="http://code.jquery.com/jquery-1.10.2.js"></script>   -->
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <!-- Javascript -->
+  <script>
+    $(function() {
+      $("#third-input-16").datepicker({
+        // appendText:"(yy-mm-dd)",  
+        dateFormat: "yy-mm-dd",
+        altField: "#datepicker-4",
+        altFormat: "DD, d MM, yy"
+      });
+    });
+  </script>
+  <!-- script for dropdown hide show -->
+  <script type="text/javascript">
+    $(function() {
+      $("#ddlPassport31").change(function() {
+        if ($(this).val() == "Q") {
+          $("#dvPassport32").show();
+          $("#dvPassport34").show();
+        } else {
+          $("#dvPassport32").hide();
+          $("#dvPassport34").hide();
+        }
+        if ($(this).val() == "R") {
+          $("#dvPassport33").show();
+          $("#dvPassport35").show();
+        } else {
+          $("#dvPassport33").hide();
+          $("#dvPassport35").hide();
+        }
+      });
+      $("#ddlPassport21").change(function() {
+        if ($(this).val() == "Y") {
+          $("#dvPassport22").show();
+        } else {
+          $("#dvPassport22").hide();
+        }
+        if ($(this).val() == "M") {
+          $("#dvPassport23").show();
+        } else {
+          $("#dvPassport23").hide();
+        }
+      });
+    });
+  </script><!-- end dropdown script -->
+
+  <style>
+    .cont-form {
+      background-color: rgba(0, 0, 0, 0.5);
+      margin-top: -3%;
+      padding: 3%;
+      width: 70%;
+
+
+    }
+
+    .hh {
+      font-size: 30px;
+      color: #fff;
+
+    }
+
+    .cont-form label {
+      font-size: 14px;
+      color: #fff;
+
+    }
+
+    .ss span {
+      font-size: 15px;
+      color: #fff;
+      font-weight: normal;
+    }
+
+    /*   .text1 input{
+          width:1000px;
+        }
+        */
+  </style>
+</head>
+
+<body>
+  <!-- Navigation
+    ==========================================-->
+  <div id="navbar">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logo2.jpg" style="height: 180%;width: 170%"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse-1" style="padding-right: 3%;font-weight: bold;font-size: 16px; font-family: " Times New Roman", Times, serif;">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Money Store</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="loan.html">Loan</a></li>
+              <li><a href="investment.html">Investment</a></li>
+              <li><a href="insurance.html">Insurance</a></li>
+              <li><a href="cards.html">Cards</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apply<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Loan</a>
+                <ul class="dropdown-menu">
+                  <!--  <li class="kopie"><a href="#">loan</a></li> -->
+                  <li><a href="home_form.html">Home loan</a></li>
+                  <li><a href="car_form.html">Car loan</a></li>
+                  <li><a href="personal_form.html">Personal loan</a></li>
+                  <li><a href="gold_form.html">Gold loan</a></li>
+                  <li><a href="business_form.html">Business loan</a></li>
+                  <li><a href="education_form.html">Education loan</a></li>
+                </ul>
+              </li>
+              <li class="dropdown dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cards</a>
+                <ul class="dropdown-menu">
+                  <!--  <li class="kopie"><a href="#">Cards</a></li> -->
+                  <li><a href="credit_form.html">Credit Card</a></li>
+                  <li><a href="debit_form.html">Debit Card</a></li>
+                </ul>
+              </li>
+              <li class="dropdown dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Insurance</a>
+                <ul class="dropdown-menu">
+                  <li><a href="home_insurance_form.html">Home Insurance</a></li>
+                  <li><a href="child_insurance.html">Child Insurance</a></li>
+                  <li><a href="retirement_insurance_form.html">Retirement Insurance</a></li>
+                  <li><a href="car_insurance_form.html">Car Insurance</a></li>
+                  <li><a href="two_wheeler_insurance_form.html">Two Wheeler Insurance</a></li>
+                  <li><a href="life_insurance_form.html">Life Insurance</a></li>
+                  <li><a href="health_insurance_form.html">Health Insurance</a></li>
+                  <li><a href="critical.html">Critical Health Insurance</a></li>
+                </ul>
+              </li>
+              <li class="dropdown dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Investment</a>
+                <ul class="dropdown-menu">
+                  <!--  <li class="kopie"><a href="#">Investment</a></li> -->
+                  <li><a href="mutual_fund_form.html">Mutual Fund</a></li>
+                  <li><a href="fixed_deposite_form.html">Fixed Deposite</a></li>
+                  <li><a href="saving_account_form.html">Saving Account</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <!-- <li class="kopie"><a href="#">Dropdown2</a></li> -->
+              <li><a href="emi.html">EMI Calculator</a></li>
+              <li><a href="rd.html">RD Calculator</a></li>
+              <li><a href="fd.html">FD Calculator</a></li>
+              <li><a href="sip_calculator.html">SIP Calculator</a></li>
+            </ul>
+          </li>
+          <li><a href="reach_to_us.html">Reach To Us</a></li>
+          <!-- <li><a href="login.html">Log in</a></li> -->
+
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+  </div>
+
+
+
+  <!-- Home Page
+    ==========================================-->
+  <div id="tf-home" class="text-center">
+    <div class="overlay" style="margin-bottom: 30px;">
+      <div class="content">
+        <div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-9 cont-form wow fadeInRight">
+          <div class="form-container-10">
+            <form>
+              <div id="f1">
+                <span class="hh">Apply for Car Loan</span><br><br><br>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form-group">
+                    <select id="first-input-1" name="turnover" placeholder="Type of property you want?" required>
+                      <option value="c1" style="background-color: gray;
+                     color: #fff">Type of Car you want?</option>
+                      <option value="c2" style="background-color: gray;
+                     color: #fff">New</option>
+                      <option value="c3" style="background-color: gray;
+                     color: #fff">Used Car</option>
+                    </select>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12  form-group">
+                    <select id="first-input-2" name="turnover" placeholder="currently reside city" required>
+                      <option value="c1" style="background-color: gray;
+                     color: #fff">currently reside city</option>
+                      <option value="c2" style="background-color: gray;
+                     color: #fff">Delhi</option>
+                      <option value="c3" style="background-color: gray;
+                     color: #fff">Mumbai</option>
+                      <option value="c4" style="background-color: gray;
+                     color: #fff">Chennai</option>
+                      <option value="c5" style="background-color: gray;
+                     color: #fff">Banglore</option>
+                      <option value="c6" style="background-color: gray;
+                     color: #fff">Pune</option>
+                      <option value="c7" style="background-color: gray;
+                     color: #fff">Jalgaon</option>
+                      <option value="c8" style="background-color: gray;
+                     color: #fff">Kolkata</option>
+
+                    </select>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form-group">
+                    <select id="third-input-13" name="bank" placeholder="Your bank account is with ?" required>
+                      <option value="purpose" style="background-color: gray;
+              color: #fff">Your bank account is with ?</option>
+                      <option value="HDFC" style="background-color: gray;
+              color: #fff">HDFC</option>
+                      <option value="AXIS" style="background-color: gray;
+              color: #fff">AXIS</option>
+                      <option value="ICICI" style="background-color: gray;
+              color: #fff">ICICI</option>
+
+                    </select>
+                  </div>
+
+
+
+                </div><br>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form-group"><br>
+                    <select id="ddlPassport31" name="turnover" placeholder="How are you currently employed?" required>
+                      <option value="P" style="background-color: gray;
+                     color: #fff">How are you currently employed?</option>
+                      <option value="Q" style="background-color: gray;
+                     color: #fff">Salaried </option>
+                      <option value="R" style="background-color: gray;
+                     color: #fff">Self Employed Professional</option>
+                      <option value="R" style="background-color: gray;
+                     color: #fff">Self Employed Business</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form-group">
+                    <label style="padding-left: 10%">Date of Birth</label><br>
+                    <input id="third-input-16" type="text" placeholder="" name="birthdate" required />
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form-group">
+                    <label style="padding-left: 10%">Email Id</label><br>
+                    <input id="third-input-16" type="text" name="mail" placeholder="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required />
+                  </div>
+                </div>
+
+                <div class="row">
+
+
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group"><br>
+                    <select id="first-input-4" name="turnover" placeholder="When are you looking to buy a car" required>
+                      <option value="c1" style="background-color: gray;
+                   color: #fff">When are you looking to buy a car?</option>
+                      <option value="c2" style="background-color: gray;
+                   color: #fff">Already booked</option>
+                      <option value="c3" style="background-color: gray;
+                   color: #fff">1 Week</option>
+                      <option value="c4" style="background-color: gray;
+                   color: #fff">2 Week</option>
+                      <option value="c5" style="background-color: gray;
+                   color: #fff">1 Month</option>
+                      <option value="c6" style="background-color: gray;
+                   color: #fff">Just Researching</option>
+
+                    </select>
+                  </div>
+
+
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group"><br>
+                    <select id="first-input-5" name="turnover" placeholder="How much would you like to borrow?" required>
+                      <option value="c1" style="background-color: gray;
+                   color: #fff">How much would you like to borrow?</option>
+                      <option value="c2" style="background-color: gray;
+                   color: #fff">2 lacs</option>
+                      <option value="c3" style="background-color: gray;
+                   color: #fff">3 lacs</option>
+                      <option value="c4" style="background-color: gray;
+                   color: #fff">4 lacs</option>
+                      <option value="c5" style="background-color: gray;
+                   color: #fff">5 lacs</option>
+                      <option value="c6" style="background-color: gray;
+                   color: #fff">Another Amount</option>
+                    </select>
+                  </div>
+                </div><br>
+
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group"><br>
+                    <select id="first-input-6" name="turnover" placeholder="How long do you want to borrow it for" required>
+                      <option value="c1" style="background-color: gray;
+                 color: #fff">How long do you want to borrow it for</option>
+                      <option value="c2" style="background-color: gray;
+                 color: #fff">1 Year</option>
+                      <option value="c3" style="background-color: gray;
+                 color: #fff">2 Years</option>
+                      <option value="c4" style="background-color: gray;
+                 color: #fff">3 Years</option>
+                      <option value="c5" style="background-color: gray;
+                 color: #fff">4 Years</option>
+                      <option value="c6" style="background-color: gray;
+                 color: #fff">5 Years</option>
+                      <option value="c6" style="background-color: gray;
+                 color: #fff">Others</option>
+
+
+
+                    </select>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group"><br>
+                    <select id="ddlPassport21" name="turnover" placeholder="Which Car make are you looking for?" required>
+                      <option value="N" style="background-color: gray;
+                     color: #fff">Which Car make are you looking for?</option>
+                      <option value="Y" style="background-color: gray;
+                     color: #fff">Honda </option>
+                      <option value="M" style="background-color: gray;
+                     color: #fff">Maruti</option>
+                    </select>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form-group" id="dvPassport22" style="display: none"><br>
+                    <select id="dvPassport22">
+                      <option style="background-color: gray;color: #fff">Which brand model are you looking for?</option>
+                      <option style="background-color: gray;color: #fff">amaz</option>
+                      <option style="background-color: gray;color: #fff">city</option>
+                      <option style="background-color: gray;color: #fff">brio</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form-group" id="dvPassport23" style="display: none"><br>
+                    <select id="dvPassport23">
+                      <option style="background-color: gray;color: #fff">Which brand model are you looking for?</option>
+                      <option style="background-color: gray;color: #fff">Baleno</option>
+                      <option style="background-color: gray;color: #fff">Alto-800</option>
+                      <option style="background-color: gray;color: #fff">Celerio</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12  form-group" id="dvPassport32" style="display: none">
+                    <label style="padding-left: 10%">gross monthly income?</label><br>
+                    <input type="text" id="dvPassport32" placeholder="" required />
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form-group" id="dvPassport34" style="display: none">
+                    <label style="padding-left: 10%">Employer Name</label><br>
+                    <input type="text" id="dvPassport34" placeholder="" required />
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form-group" id="dvPassport33" style="display: none">
+                    <label style="padding-left: 10%">gross annual income?</label><br>
+                    <input type="text" id="dvPassport33" placeholder="" required />
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form-group" id="dvPassport35" style="display: none"><br>
+                    <select id="dvPassport35" name="turnover" placeholder="Select Profession type" required>
+                      <option style="background-color: gray;
+                     color: #fff">Select Profession type</option>
+                      <option style="background-color: gray;
+                     color: #fff">Architect </option>
+                      <option style="background-color: gray;
+                     color: #fff">Consultant</option>
+                      <option style="background-color: gray;
+                     color: #fff">Dentist</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" onclick='redir()' class="b1">UNLOCK BEST OFFERS</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top: 50px;">
+    <h2>CAR LOAN</h2><br>
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#home">Car Loan</a></li>
+      <li><a data-toggle="tab" href="#menu1">Eligibility Criteria </a></li>
+      <!-- <li><a data-toggle="tab" href="#menu2">Documents required </a></li> -->
+      <!--  <li><a data-toggle="tab" href="#menu3">Menu 3</a></li> -->
+    </ul>
+
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+        <h3>Car Loan</h3>
+        <p>The car loan is the great way to drive your dream car without having to make the complete payment upfront. </p>
+      </div>
+      <div id="menu1" class="tab-pane fade">
+        <h3>Eligibility Criteria </h3>
+        <p>Eligibility for car loans differ based on a various criteria set by the lender considering the borrower’s profile. Some of them are as follows.</p>
+        <p><b>Age-</b>Minimum 18 Years and Maximum 75 Years</p>
+        <p><b>Net Income Requirement-</b>Upwards Rs.10,000 p.m</p>
+        <p><b>Employment-
+            Type
+            Stability
+            -</b>For Salaried or Self-employed
+          3 years total experience or years in business or profession, 2 years in the current post or business or profession
+        </p>
+        <p><b>Car Type-</b>Old vs. New : affect the loan amount</p>
+        <p><b>Car Value-</b>Affect the loan amount</p>
+        <p><b>Car Model-</b>Approved model</p>
+        <p><b>Residence-
+            Area
+            Stability
+            -</b>Urban or Semi urban or Rural
+          1 year stay at the current residence
+        </p>
+      </div>
+      <!--  <div id="menu2" class="tab-pane fade">
+      <h3>Documents required </h3>
+      <p><li>Colour Photo</li>
+      <li>PAN Card Copy</li>
+      <li>Last 6 months bank A/C statement</li>
+      <li>Passport size photograph of the applicant & co-applicant</li>
+      <li>Age proof of co-applicant</li>
+       <li>Residence Address Proof</li></p>
+    </div> -->
+      <!--  <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div> -->
+    </div>
+  </div><br><br>
+  <!-- footer ==================================================== -->
+  <nav id="footer">
+    <div class="container">
+      <div class="pull-left fnav wow fadeInLeft">
+        <p>ALL RIGHTS RESERVED. COPYRIGHT © 2017. Developed by <b style="font-size: 15px">Inalphabet Corporation .</b></a></p>
+        <!--  <span><i class="fa fa-envelope" aria-hidden="true" style="font-size: 16px"></i></span><span style="padding-left: 2%">info@antelopetech.in</span>
+                <span style="padding-left: 10px"><i class="fa fa-phone" aria-hidden="true" style="font-size: 16px"></i></span><span style="padding-left: 2%">0253-2591723</span> -->
+      </div>
+      <div class="pull-right fnav wow fadeInRight">
+        <center><b>Address</b></center>
+        <span>Inalphabet Corporation ,<br> Pune</span>
+      </div>
+      <!--  <div class="pull-right fnav wow fadeInRight">
+                <ul class="footer-social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div> -->
+    </div>
+  </nav>
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.1.11.1.js"></script> -->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/SmoothScroll.js"></script>
+  <script type="text/javascript" src="js/jquery.isotope.js"></script>
+
+
+  <script src="js/owl.carousel.js"></script>
+
+  <!-- Javascripts
+    ================================================== -->
+  <script type="text/javascript" src="js/main.js"></script>
+  <!-- animation
+     ================================================== -->
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript">
+    new WOW().init()
+  </script>
+  <script>
+    function redir() {
+      window.location.replace("car_loan_final_table.html");
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Page Needs
+    ================================================== -->
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Money Store</title>
+  <meta name="description">
+  <meta name="keywords">
+  <meta name="author">
+
+  <!-- Favicons
+    ================================================== -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+  <!-- Slider
+    ================================================== -->
+  <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+  <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+  <!-- Stylesheet
+    ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/style_home_insurance_form.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="forms/src/foxholder-styles.css" />
+  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <!-- animation
+     ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <!--  forms -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="forms/src/foxholder.js"></script>
+  <script src="forms/static/scripts/script.js"></script>
+  <script>
+    $(function() {
+      $("#ddlPassport31").change(function() {
+        if ($(this).val() == "R") {
+
+          $("#tt1").hide();
+        } else {
+
+        }
+        if ($(this).val() == "Q") {
+          $("#tt1").show();
+        } else {
+
+          $("#tt1").hide();
+        }
+      });
+    });
+  </script>
+  <style>
+    .cont-form {
+      background-color: rgba(0, 0, 0, 0.6);
+      margin-top: -3%;
+      padding: 3%;
+      width: 70%;
+
+
+    }
+
+    .hh {
+      font-size: 30px;
+      color: #fff;
+
+    }
+
+    .cont-form label {
+      font-size: 14px;
+      color: #fff;
+
+    }
+
+    .ss span {
+      font-size: 15px;
+      color: #fff;
+      font-weight: normal;
+    }
+
+    /*   .text1 input{
+          width:1000px;
+        }
+        */
+  </style>
+</head>
+
+<body>
+  <!-- Navigation
+    ==========================================-->
+  <div id="navbar">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logo2.jpg" style="height: 180%;width: 170%"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse-1" style="padding-right: 3%;font-weight: bold;font-size: 16px; font-family: " Times New Roman", Times, serif;">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Money Store</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="loan.html">Loan</a></li>
+              <li><a href="investment.html">Investment</a></li>
+              <li><a href="insurance.html">Insurance</a></li>
+              <li><a href="cards.html">Cards</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apply<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Loan</a>
+                <ul class="dropdown-menu">
+                  <!--  <li class="kopie"><a href="#">loan</a></li> -->
+                  <li><a href="home_form.html">Home loan</a></li>
+                  <li><a href="car_form.html">Car loan</a></li>
+                  <li><a href="personal_form.html">Personal loan</a></li>
+                  <li><a href="gold_form.html">Gold loan</a></li>
+                  <li><a href="business_form.html">Business loan</a></li>
+                  <li><a href="education_form.html">Education loan</a></li>
+                </ul>
+              </li>
+              <li class="dropdown dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cards</a>
+                <ul class="dropdown-menu">
+                  <!--  <li class="kopie"><a href="#">Cards</a></li> -->
+                  <li><a href="credit_form.html">Credit Card</a></li>
+                  <li><a href="debit_form.html">Debit Card</a></li>
+                </ul>
+              </li>
+              <li class="dropdown dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Insurance</a>
+                <ul class="dropdown-menu">
+                  <li><a href="home_insurance_form.html">Home Insurance</a></li>
+                  <li><a href="child_insurance.html">Child Insurance</a></li>
+                  <li><a href="retirement_insurance_form.html">Retirement Insurance</a></li>
+                  <li><a href="car_insurance_form.html">Car Insurance</a></li>
+                  <li><a href="two_wheeler_insurance_form.html">Two Wheeler Insurance</a></li>
+                  <li><a href="life_insurance_form.html">Life Insurance</a></li>
+                  <li><a href="health_insurance_form.html">Health Insurance</a></li>
+                  <li><a href="critical.html">Critical Health Insurance</a></li>
+                </ul>
+              </li>
+              <li class="dropdown dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Investment</a>
+                <ul class="dropdown-menu">
+                  <!--  <li class="kopie"><a href="#">Investment</a></li> -->
+                  <li><a href="mutual_fund_form.html">Mutual Fund</a></li>
+                  <li><a href="fixed_deposite_form.html">Fixed Deposite</a></li>
+                  <li><a href="saving_account_form.html">Saving Account</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <!-- <li class="kopie"><a href="#">Dropdown2</a></li> -->
+              <li><a href="emi.html">EMI Calculator</a></li>
+              <li><a href="rd.html">RD Calculator</a></li>
+              <li><a href="fd.html">FD Calculator</a></li>
+              <li><a href="sip_calculator.html">SIP Calculator</a></li>
+            </ul>
+          </li>
+          <li><a href="reach_to_us.html">Reach To Us</a></li>
+          <!-- <li><a href="login.html">Log in</a></li> -->
+
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+  </div>
+
+
+  <!-- Home Page
+    ==========================================-->
+  <div id="tf-home" class="text-center">
+    <div class="overlay">
+      <div class="content">
+        <div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-9 cont-form wow fadeInRight">
+          <div class="form-container-10">
+            <form>
+              <div id="f1">
+                <span class="hh">Your Home</span><br><br><br>
+                <div class="row ss">
+                  <div class="col-md-6 form-group"><br>
+                    <span>What is your property type</span><br>
+                    <select>
+                      <option value="N" style="background-color: gray;color: #fff">What is your property type</option>
+                      <option value="N" style="background-color: gray;color: #fff">Structure + Content</option>
+                      <option value="Y" style="background-color: gray;color: #fff">Only Structure</option>
+                      <option value="M" style="background-color: gray;color: #fff">Only Content</option>
+
+                    </select>
+                  </div>
+                  <!--  <div class="col-md-8 form-group">
+                    <span style="padding-right:50%">What is your property type</span><br>
+                    <button type="button" 
+                    style="background-color:transparent;
+                    color: #fff; 
+                    border: 1px solid #fff;
+                    padding-left:20px;
+                    padding-right: 20px;
+                    font-size: 15px;
+                    margin-top: 2%">Structure + Content</button>
+                    <button type="button" 
+                    style="background-color:transparent;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    padding-left:20px;
+                    padding-right: 20px;
+                    font-size: 15px;
+                    margin-top: 2%">Only Structure</button>
+                     <button type="button" 
+                    style="background-color:transparent;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    padding-left:20px;
+                    padding-right: 20px;
+                    font-size: 15px;
+                    margin-top: 2%">Only Content</button>
+                </div> -->
+                  <div class="col-md-6 form-group">
+                    <span>Please select age of property</span><br>
+                    <select name="turnover" placeholder="Age of the property" required>
+                      <option value="s1" style="background-color: gray;
+                                   color: #fff">Age of the property</option>
+                      <option value="s3" style="background-color: gray;
+                                   color: #fff">Upto 30 years</option>
+                      <option value="s4" style="background-color: gray;
+                                   color: #fff">31-50 years</option>
+                      <option value="s5" style="background-color: gray;
+                                   color: #fff">More than 50 years</option>
+                    </select>
+                  </div>
+
+
+                </div><br>
+                <div class="row ss">
+                  <div class="col-md-6 form-group">
+                    <span>Is your house rented?</span><br>
+                    <select name="turnover" placeholder="Is your house rented?" required>
+                      <option value="l3" style="background-color: gray;
+                                   color: #fff">Is your house rented?</option>
+                      <option value="l1" style="background-color: gray;
+                                   color: #fff">Owned</option>
+                      <option value="l2" style="background-color: gray;
+                                   color: #fff">Rented</option>
+                      <!--  <option value="l3"  
+                                   style="background-color: gray;
+                                   color: #fff">31-50 years</option>
+                                   <option value="l4"  
+                                   style="background-color: gray;
+                                   color: #fff">More than 50 years</option> -->
+                    </select>
+                  </div>
+                  <!--  <div class="col-md-6 form-group">
+                     <span style="padding-right: 35%"> Is your house rented?</span><br>
+                     <button type="button"  
+                     style="background-color:transparent;
+                     color: #fff;
+                     border: 1px solid #fff;
+                     padding-left:30px;
+                     padding-right: 30px;
+                     font-size: 15px;
+                     margin-top: 2%;
+                     margin-left: -20%" 
+                    >Rented</button>
+                     <button type="button"  
+                     style="background-color:transparent;
+                     color: #fff;
+                     border: 1px solid #fff;
+                     padding-left:30px;
+                     padding-right: 30px;
+                     font-size: 15px;
+                     margin-top: 2%" 
+                    >Owned</button>
+                 </div> -->
+                  <div class="col-md-6 form-group">
+                    <span>Type of property</span><br>
+                    <select name="turnover" placeholder="Type of property" required>
+                      <option value="a3" style="background-color: gray;
+                                   color: #fff">Type of property</option>
+                      <option value="a1" style="background-color: gray;
+                                   color: #fff">Flat/Apartment</option>
+                      <option value="a2" style="background-color: gray;
+                                   color: #fff">Individual House</option>
+                      <!--  <option value="s4"  
+                                   style="background-color: gray;
+                                   color: #fff">31-50 years</option>
+                                   <option value="s5"  
+                                   style="background-color: gray;
+                                   color: #fff">More than 50 years</option> -->
+                    </select>
+                  </div>
+
+                  <!--  <div class="col-md-6 form-group">
+                    <span style="padding-right: 30%">Type of property</span><br>
+                    <button type="button" 
+                    style="background-color:transparent;
+                    color: #fff; 
+                    border: 1px solid #fff;
+                    padding-left:20px;
+                    padding-right: 20px;
+                    font-size: 15px;
+                    margin-top: 2%;margin-left: -20px;">Flat/Apartment</button>
+                    <button type="button" 
+                    style="background-color:transparent;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    padding-left:20px;
+                    padding-right: 20px;
+                    font-size: 15px;
+                    margin-top: 2%">Individual House</button>
+                </div> -->
+                </div><br>
+                <button type="submit" class="b1" onclick="$('#f1').hide();$('#f2').show();">PROCEED</button>
+              </div>
+
+              <div id="f2" hidden>
+                <span class="hh">Covers for Your Home</span><br><br><br>
+                <div class="row">
+                  <!--   -->
+
+                  <div class="col-md-6 form-group">
+                    <select id="third-input-13" name="bank1" placeholder="Sum insured for Structure Cover for Fire and Allied Perils" required>
+                      <option value="purpose" style="background-color: gray;
+                            color: #fff">Sum insured for Structure Cover for Fire and Allied Perils</option>
+                      <option value="a1" style="background-color: gray;
+                            color: #fff">10,00,000</option>
+                      <option value="a2" style="background-color: gray;
+                            color: #fff">20,00,000</option>
+                      <option value="a3" style="background-color: gray;
+                            color: #fff">30,00,000</option>
+
+                    </select>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <select id="third-input-15" name="bank2" placeholder="Furniture" required>
+                      <option value="purpose" style="background-color: gray;
+                            color: #fff">Furniture</option>
+                      <option value="b1" style="background-color: gray;
+                            color: #fff">50,000</option>
+                      <option value="b2" style="background-color: gray;
+                            color: #fff">60,000</option>
+                      <option value="b3" style="background-color: gray;
+                            color: #fff">1,00,000</option>
+
+                    </select>
+                  </div>
+
+                </div><br>
+                <div class="row">
+                  <!--   -->
+
+                  <div class="col-md-6 form-group">
+                    <select id="third-input-13" name="bank3   placeholder=" Electronic Equipment Breakdown" required>
+                      <option value="purpose" style="background-color: gray;
+                            color: #fff">Electronic Equipment Breakdown</option>
+                      <option value="c1" style="background-color: gray;
+                            color: #fff">1,00,000</option>
+                      <option value="c2" style="background-color: gray;
+                            color: #fff">2,00,000</option>
+                      <option value="c2" style="background-color: gray;
+                            color: #fff">3,00,000</option>
+
+                    </select>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <select id="third-input-15" name="bank4" placeholder="Electrical Appliances Breakdown" required>
+                      <option value="purpose" style="background-color: gray;
+                            color: #fff">Electrical Appliances Breakdown</option>
+                      <option value="d1" style="background-color: gray;
+                            color: #fff">10,000</option>
+                      <option value="d2" style="background-color: gray;
+                            color: #fff">20,000</option>
+                      <option value="d3" style="background-color: gray;
+                            color: #fff">30,000</option>
+
+                    </select>
+                  </div>
+
+                </div><br>
+                <div class="row">
+                  <div class="col-md-offset-3 col-md-6 form-group">
+                    <select id="third-input-15" name="bank5" placeholder="Sum insured for Content Cover for Fire and Allied Perils" required>
+                      <option value="purpose" style="background-color: gray;
+                            color: #fff">Sum insured for Content Cover for Fire and Allied Perils</option>
+                      <option value="e1" style="background-color: gray;
+                            color: #fff">50,000</option>
+                      <option value="e2" style="background-color: gray;
+                            color: #fff">80,000</option>
+                      <option value="e3" style="background-color: gray;
+                            color: #fff">1,00,000</option>
+
+                    </select>
+                  </div>
+                </div><br>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form-group"><br>
+                    <select id="ddlPassport31" name="turnover" placeholder="Include Burglary Cover?" required>
+                      <option value="P" style="background-color: gray;
+                     color: #fff">Include Burglary Cover?</option>
+                      <option value="Q" style="background-color: gray;
+                     color: #fff">Yes</option>
+                      <option value="R" style="background-color: gray;
+                     color: #fff">No</option>
+                    </select>
+                  </div>
+                  <!--  <div class="col-md-6 form-group">
+                     <span style="color: #fff">Include Burglary Cover?</span><br>
+                     <button type="button"  
+                     style="background-color:transparent;
+                     color: #fff;
+                     border: 1px solid #fff;
+                     padding-left:30px;
+                     padding-right: 30px;
+                     font-size: 15px;
+                     margin-top: 2%" 
+                     onclick="$('#tt1').show();$('#tt2').show();$('#tt3').show();">Yes</button>
+                     <button type="button"  
+                     style="background-color:transparent;
+                     color: #fff;
+                     border: 1px solid #fff;
+                     padding-left:30px;
+                     padding-right: 30px;
+                     font-size: 15px;
+                     margin-top: 2%" 
+                     onclick="$('#tt1').hide();$('#tt2').hide();$('#tt3').hide();">No</button>
+                 </div> -->
+
+                  <div class="col-md-6 form-group" id="tt1" style="display: none;"><BR>
+                    <select id="tt1" name="Salaried" placeholder="Security Measure" required>
+                      <option value="p1" style="background-color: gray;
+                            color: #fff">Security Measure</option>
+                      <option value="p2" style="background-color: gray;
+                            color: #fff">Non</option>
+                      <option value="p3" style="background-color: gray;
+                            color: #fff">Intercom</option>
+                      <option value="p3" style="background-color: gray;
+                            color: #fff">both</option>
+
+
+                    </select>
+                  </div>
+
+
+                </div><br>
+                <div class="row">
+                  <!--  <div class="col-md-6 form-group" id="tt2" hidden>
+                     <input  id="third-input-16" type="text" placeholder="Co-borrower's monthly income?"  required />
+                      </div> -->
+                  <div class="col-md-6 form-group" hidden>
+                    <input class="text2" id="third-input-17" type="text" placeholder="Co-borrower's total EMI paid currently?" required />
+                  </div>
+
+
+
+                </div><br>
+                <button type="submit" onclick='redir()' class="b1">PROCEED</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer ==================================================== -->
+  <nav id="footer">
+    <div class="container">
+      <div class="pull-left fnav wow fadeInLeft">
+        <p>ALL RIGHTS RESERVED. COPYRIGHT © 2017. Developed by <b style="font-size: 15px">Inalphabet Corporation .</b></a></p>
+        <!--  <span><i class="fa fa-envelope" aria-hidden="true" style="font-size: 16px"></i></span><span style="padding-left: 2%">info@antelopetech.in</span>
+                <span style="padding-left: 10px"><i class="fa fa-phone" aria-hidden="true" style="font-size: 16px"></i></span><span style="padding-left: 2%">0253-2591723</span> -->
+      </div>
+      <div class="pull-right fnav wow fadeInRight">
+        <center><b>Address</b></center>
+        <span>Inalphabet Corporation ,<br> Pune</span>
+      </div>
+      <!--  <div class="pull-right fnav wow fadeInRight">
+                <ul class="footer-social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div> -->
+    </div>
+  </nav>
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script> -->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/SmoothScroll.js"></script>
+  <script type="text/javascript" src="js/jquery.isotope.js"></script>
+
+
+  <script src="js/owl.carousel.js"></script>
+
+  <!-- Javascripts
+    ================================================== -->
+  <script type="text/javascript" src="js/main.js"></script>
+  <!-- animation
+     ================================================== -->
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript">
+    new WOW().init()
+  </script>
+  <script>
+    function redir() {
+      window.location.replace("home_insurance_final_table.html");
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Page Needs
+    ================================================== -->
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Money Store</title>
+  <meta name="description">
+  <meta name="keywords">
+  <meta name="author">
+
+  <!-- Favicons
+    ================================================== -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+  <!-- Slider
+    ================================================== -->
+  <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+  <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+  <!-- Stylesheet
+    ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/style_car_insurance_form.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="forms/src/foxholder-styles.css" />
+  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <!-- animation
+     ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <!--  forms -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+  <script src="forms/src/foxholder.js"></script>
+  <script src="forms/static/scripts/script.js"></script>
+
+  // script for dropdown hide show
+  <script>
+    function see() {
+      if ($('#ddlPassport3 option:selected').val() == 'r2') {
+
+        $('#i1').hide();
+        $('#i2').hide();
+        $('#i3').hide();
+      } else {
+
+        $('#i1').show();
+        $('#i2').show();
+        $('#i3').show();
+      }
+    }
+
+    function see2() {
+      if ($('#ddlPassport2 option:selected').val() == 'Flat') {
+        $('#m1').show();
+        $('#m2').hide();
+        $('#m3').hide();
+        $('#m4').hide();
+        $('#m5').hide();
+
+      } else if ($('#ddlPassport2').val() == 'Ford') {
+        $('#m2').show();
+        $('#m1').hide();
+        $('#m3').hide();
+        $('#m4').hide();
+        $('#m5').hide();
+
+      } else if ($('#ddlPassport2').val() == 'Maruti') {
+        $('#m3').show();
+        $('#m1').hide();
+        $('#m2').hide();
+        $('#m4').hide();
+        $('#m5').hide();
+      } else if ($('#ddlPassport2').val() == 'Honda') {
+        $('#m4').show();
+        $('#m1').hide();
+        $('#m2').hide();
+        $('#m3').hide();
+        $('#m5').hide();
+      } else if ($('#ddlPassport2').val() == 'Mahindra') {
+        $('#m5').show();
+        $('#m1').hide();
+        $('#m2').hide();
+        $('#m3').hide();
+        $('#m4').hide();
+      }
+    }
+  </script>
+
+  <!-- calender -->
+  <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <!-- Javascript -->
+  <script>
+    $(function() {
+      $("#datepicker-3").datepicker({
+        // appendText:"(yy-mm-dd)",  
+        dateFormat: "yy-mm-dd",
+        altField: "#datepicker-4",
+        altFormat: "DD, d MM, yy"
+      });
+    });
+  </script>
+  <style>
+    .cont-form {
+
+      background-color: rgba(0, 0, 0, 0.5);
+      margin-top: -8%;
+      padding: 2%;
+      width: 75%;
+
+    }
+
+    .hh {
+      font-size: 30px;
+      color: #fff;
+
+    }
+
+    .cont-form label {
+      font-size: 14px;
+      color: #fff;
+
+    }
+
+    .b1 {
+      padding-right: 10%;
+      padding-left: 10%;
+    }
+
+    .b14 {
+      background-color: white;
+      border: 1px solid gray;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    .btn-secondary {
+      background-color: #fff;
+    }
+
+    .btn-secondary a:focus {
+      color: orange;
+    }
+
+    #input {
+      /* height:20px;
+    margin:0;
+    padding-right: 30px;*/
+      /* width: 100%;*/
+    }
+
+    #input_img {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      height: 12px;
+      width: 12px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation
+    ==========================================-->
+  <div id="navbar">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logo2.jpg" style="height: 180%;width: 170%"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse-1" style="padding-right: 3%;font-weight: bold;font-size: 16px; font-family: " Times New Roman", Times, serif;">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Money Store</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="loan.html">Loan</a></li>
+              <li><a href="investment.html">Investment</a></li>
+              <li><a href="insurance.html">Insurance</a></li>
+              <li><a href="cards.html">Cards</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apply<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Loan</a>
+                <ul class="dropdown-menu">
+                  <!--  <li class="kopie"><a href="#">loan</a></li> -->
+                  <li><a href="home_form.html">Home loan</a></li>
+                  <li><a href="car_form.html">Car loan</a></li>
+                  <li><a href="personal_form.html">Personal loan</a></li>
+                  <li><a href="gold_form.html">Gold loan</a></li>
+                  <li><a href="business_form.html">Business loan</a></li>
+                  <li><a href="education_form.html">Education loan</a></li>
+                </ul>
+              </li>
+              <li class="dropdown dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cards</a>
+                <ul class="dropdown-menu">
+                  <!--  <li class="kopie"><a href="#">Cards</a></li> -->
+                  <li><a href="credit_form.html">Credit Card</a></li>
+                  <li><a href="debit_form.html">Debit Card</a></li>
+                </ul>
+              </li>
+              <li class="dropdown dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Insurance</a>
+                <ul class="dropdown-menu">
+                  <li><a href="home_insurance_form.html">Home Insurance</a></li>
+                  <li><a href="child_insurance.html">Child Insurance</a></li>
+                  <li><a href="retirement_insurance_form.html">Retirement Insurance</a></li>
+                  <li><a href="car_insurance_form.html">Car Insurance</a></li>
+                  <li><a href="two_wheeler_insurance_form.html">Two Wheeler Insurance</a></li>
+                  <li><a href="life_insurance_form.html">Life Insurance</a></li>
+                  <li><a href="health_insurance_form.html">Health Insurance</a></li>
+                  <li><a href="critical.html">Critical Health Insurance</a></li>
+                </ul>
+              </li>
+              <li class="dropdown dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Investment</a>
+                <ul class="dropdown-menu">
+                  <!--  <li class="kopie"><a href="#">Investment</a></li> -->
+                  <li><a href="mutual_fund_form.html">Mutual Fund</a></li>
+                  <li><a href="fixed_deposite_form.html">Fixed Deposite</a></li>
+                  <li><a href="saving_account_form.html">Saving Account</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <!-- <li class="kopie"><a href="#">Dropdown2</a></li> -->
+              <li><a href="emi.html">EMI Calculator</a></li>
+              <li><a href="rd.html">RD Calculator</a></li>
+              <li><a href="fd.html">FD Calculator</a></li>
+              <li><a href="sip_calculator.html">SIP Calculator</a></li>
+            </ul>
+          </li>
+          <li><a href="reach_to_us.html">Reach To Us</a></li>
+          <!-- <li><a href="login.html">Log in</a></li> -->
+
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+  </div>
+
+
+  <!-- Home Page
+    ==========================================-->
+  <div id="tf-home" class="text-center">
+    <div class="overlay">
+      <h4 class="wow fadeInRight">Welcome on <strong><span>Money Store</span></strong></h4>
+      <div class="content">
+        <div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-9 cont-form wow fadeInRight">
+          <form action="car_insurance_final_table.html" method="Post">
+            <span class="hh">Private Car Insurance</span><br><br>
+            <div class="row">
+              <div class="col-md-3 form-group">
+                <label>Enter Registration Number</label>
+                <input type="text" class="form-control" placeholder="Example(DL-1-AB-1234)">
+              </div>
+              <div class="col-md-3">
+                <label>Manufacturer</label>
+                <select class="form-control" name="Manufacturer" onchange="see2()" id="ddlPassport2" required>
+                  <option value="">Manufacturer</option>
+                  <option value="Flat">Flat</option>
+                  <option value="Ford">Ford</option>
+                  <option value="Maruti">Maruti</option>
+                  <option value="honda">Honda</option>
+                  <option value="Mahindra">Mahindra</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="col-md-3" id="m1" hidden>
+                <label>Model</label>
+                <select class="form-control" name="Model" required>
+                  <option value="Model">Model</option>
+                  <option value="F">500</option>
+                  <option value="Fr">Palo</option>
+                  <option value="M">Petra</option>
+                  <option value="h">UNO</option>
+                  <option value="M">Palio Stile</option>
+                  <option value="o">Other</option>
+                </select>
+              </div>
+              <div class="col-md-3" id="m2" hidden>
+                <label>Model</label>
+                <select class="form-control" name="Model" required>
+                  <option value="Model">Model</option>
+                  <option value="Flat">Galaxy</option>
+                  <option value="Ford">Ikon</option>
+                  <option value="Maruti">Eskort</option>
+                  <option value="honda">Figo</option>
+                  <option value="Mahindra">Fusion</option>
+                  <option value="other">Fusion Plus</option>
+                </select>
+              </div>
+              <div class="col-md-3" id="m3" hidden>
+                <label>Model</label>
+                <select class="form-control" name="Model" required>
+                  <option value="Model">Model</option>
+                  <option value="Flat">800</option>
+                  <option value="Ford">Alto</option>
+                  <option value="Maruti">Alto-800</option>
+                  <option value="honda">Swift</option>
+                  <option value="Mahindra">Swift-KB</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="col-md-3" id="m4" hidden>
+                <label>Model</label>
+                <select class="form-control" name="Model" required>
+                  <option value="Model">Model</option>
+                  <option value="Flat">Accord</option>
+                  <option value="Ford">BR-V</option>
+                  <option value="Maruti">BRIO</option>
+                  <option value="honda">New City</option>
+                  <option value="Mahindra">Jazz</option>
+                  <option value="other">CRV</option>
+                </select>
+              </div>
+              <div class="col-md-3" id="m5" hidden>
+                <label>Model</label>
+                <select class="form-control" name="Model" required>
+                  <option value="Model">Model</option>
+                  <option value="Flat">Bolero</option>
+                  <option value="Ford">Scorpio</option>
+                  <option value="Maruti">Thar</option>
+                  <option value="honda">Quanto</option>
+                  <option value="Mahindra">KUV-100</option>
+                  <option value="other">XYLO</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label>Select a Fuel Type</label>
+                <select class="form-control" name="Model" required>
+                  <option value="Model">Fuel Type</option>
+                  <option value="Flat">Petrol</option>
+                  <option value="Ford">Deisel</option>
+                  <option value="Maruti">CNG</option>
+                  <option value="honda">External CNG Kit</option>
+                </select>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <label>Registration Year</label>
+                <select class="form-control" name="year" onchange="see()" id="ddlPassport3" required>
+                  <option>Registration Year</option>
+                  <option value="r2">I Have New Car</option>
+                  <option value="2003">2003</option>
+                  <option value="2004">2004</option>
+                  <option value="2005">2005</option>
+                  <option value="2006">2006</option>
+                  <option value="2007">2007</option>
+                  <option value="2008">2008</option>
+                  <option value="2009">2009</option>
+                  <option value="2010">2010</option>
+                  <option value="2011">2011</option>
+                  <option value="2012">2012</option>
+                  <option value="2013">2013</option>
+                  <option value="2014">2014</option>
+                  <option value="2015">2015</option>
+                  <option value="2016">2016</option>
+                </select>
+              </div>
+
+              <div class="col-md-3 form-group">
+                <label>Full Name</label>
+                <input type="text" class="form-control" placeholder="Full Name">
+              </div>
+              <div class="col-md-3 form-group">
+                <label>Mobile Number</label>
+                <input type="text" class="form-control" placeholder="Mobile Number">
+              </div>
+              <div class="col-md-3 form-group">
+                <label>Email Address </label>
+                <input type="email" class="form-control" placeholder="Email Address ">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 form-group" id="i1" hidden>
+                <label>Select Previous Insurer</label>
+                <select class="form-control" name="year" onchange="see()" id="ddlPassport3" required>
+                  <option>Previous Insurer</option>
+                  <option value="Cholomandalam">Cholomandalam</option>
+                  <option value="ICICI Lombard">ICICI Lombard</option>
+                  <option value="Magma">Magma</option>
+                  <option value="National Insurance">National Insurance</option>
+                  <option value="Kotak">Kotak</option>
+                  <option value="Bajaz Allianz">Bajaz Allianz</option>
+                  <option value="Bharati Axa">Bharati Axa</option>
+                  <option value="Future Generali">Future Generali</option>
+                  <option value="HDFC ERGO">HDFC ERGO</option>
+                  <option value="ORIANTAL">ORIANTAL</option>
+                  <option value="SBI">SBI</option>
+                  <option value="Rilience">Rilience</option>
+                  <option value="L & T">L & T</option>
+                  <option value="Tata AIG">Tata AIG</option>
+                  <option value="New India Insurance">New India Insurance</option>
+                </select>
+              </div>
+              <div class="col-md-4 form-group" id="i2" hidden>
+                <label>Select Policy Expiry Date</label>
+                <input type="text" class="form-control" id="datepicker-3" placeholder="dd\mm\yyyy">
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> I have read and agree to Terms of Use
+                </label>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <button type="submit" class="btn btn-primary b1" name="btn_submit">Proceed</button>
+            </div>
+            <!-- end first form -->
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- footer ==================================================== -->
+  <nav id="footer">
+    <div class="container">
+      <div class="pull-left fnav wow fadeInLeft">
+        <p>ALL RIGHTS RESERVED. COPYRIGHT © 2017. Developed by <b style="font-size: 15px">Inalphabet Corporation .</b></a></p>
+
+      </div>
+      <div class="pull-right fnav wow fadeInRight">
+        <center><b>Address</b></center>
+        <span>Inalphabet Corporation ,<br> Pune</span>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+  <!--  <script type="text/javascript" src="js/jquery.1.11.1.js"></script> -->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/SmoothScroll.js"></script>
+  <script type="text/javascript" src="js/jquery.isotope.js"></script>
+
+
+  <script src="js/owl.carousel.js"></script>
+
+  <!-- Javascripts
+    ================================================== -->
+  <script type="text/javascript" src="js/main.js"></script>
+  <!-- animation
+     ================================================== -->
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript">
+    new WOW().init()
+  </script>
+  <!-- <script>
+        function redir(){
+            window.location.replace("child_insurance_final_table.html");
+        }
+     </script> -->
+  <!-- Javascript -->
+
+</body>
+
+</html>

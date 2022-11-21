@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Page Needs
+    ================================================== -->
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Money Store</title>
+  <meta name="description">
+  <meta name="keywords">
+  <meta name="author">
+
+  <!-- Favicons
+    ================================================== -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+  <!-- Slider
+    ================================================== -->
+  <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+  <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+  <!-- Stylesheet
+    ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/style_debit_form.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="forms/src/foxholder-styles.css" />
+  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <!-- animation
+     ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <!--  forms -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="forms/src/foxholder.js"></script>
+  <script src="forms/static/scripts/script.js"></script>
+
+  <!-- script for dropdown hide show -->
+  <script type="text/javascript">
+    $(function() {
+      $("#ddlPassport").change(function() {
+        if ($(this).val() == "Y") {
+          $("#dvPassport").show();
+        } else {
+          $("#dvPassport").hide();
+        }
+        if ($(this).val() == "M") {
+          $("#dvPassport1").show();
+        } else {
+          $("#dvPassport1").hide();
+        }
+      });
+    });
+  </script><!-- end dropdown script -->
+
+  <style type="text/css">
+    .homeform {
+      border: 3px solid #91c46c;
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    h4 {
+      padding-top: 20px;
+      color: #91c46c;
+    }
+
+    .form1 {
+      padding-top: 20px;
+    }
+
+    button {
+      background-color: #91c46c;
+      border-radius: 20px;
+      padding: 10px 30px;
+      margin-top: 20px;
+    }
+
+    select {
+      border: none;
+    }
+
+    option {
+      color:
+    }
+
+    .s1 {
+      background-color: #3A8AD6;
+      color: white;
+      text-align: center;
+      padding-top: 1.8%;
+      padding-bottom: 1.8%;
+    }
+
+    .s2 {
+      border-bottom: 1px solid #DEE1E3;
+      padding-top: 4%;
+      padding-bottom: 4%;
+      padding-left: 4%;
+      padding-right: 1%;
+      font-weight: bold;
+      color: gray;
+    }
+
+    .s3 {
+      background-color: gray;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      padding-top: 4%;
+      padding-bottom: 4%;
+      margin-top: 4%;
+    }
+
+    .feature-list {
+      border: 1px solid #E4E7E9;
+      margin-top: 2%;
+      background-color: white;
+    }
+
+    .s4 {
+      border-bottom: 1px solid gray;
+      border-bottom: 1px solid gray;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      padding-left: 4%;
+      padding-right: 1%;
+      font-weight: bold;
+      color: gray;
+    }
+
+    .s5 {
+      background-color: gray;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      margin-top: 4%;
+    }
+
+    .s6 {
+      background-color: #E4E7E9;
+      margin-left: -5.5%;
+      margin-right: -6%;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .s7 {
+      color: #000;
+      padding-left: 4%;
+      padding-bottom: 2%;
+    }
+
+    .d1 span {
+      border: 1px solid gray;
+    }
+
+    .d1 label {
+      color: #6A6C6E;
+    }
+
+    .d1 input {
+      border: 1px solid gray;
+    }
+
+    .d2 span {
+      border: 1px solid gray;
+
+    }
+
+    .d2 input {
+      border: 1px solid gray;
+
+
+    }
+
+    .d2 label {
+      /*margin-top:-14%;*/
+      color: #6A6C6E;
+    }
+
+    .d2 {
+      margin-top: -14%;
+    }
+
+    .d3 span {
+      border: 1px solid gray;
+    }
+
+    .d3 input {
+      border: 1px solid gray;
+      /*margin-top: -10%; */
+    }
+
+    .d3 label {
+      /*margin-top:-14%;*/
+      color: #6A6C6E;
+    }
+
+    .b1 {
+      padding: 2%;
+      padding-left: 8%;
+      padding-right: 8%;
+      margin-left: 22%;
+      margin-bottom: 5%;
+      font-size: 20px;
+    }
+
+    .d3 {
+      margin-top: -14%;
+    }
+
+    .d4 {
+      margin-top: 18%;
+    }
+
+    .d5 {
+      margin-top: 2%;
+    }
+
+    .b11 {
+      background-color: white;
+      border: 1px solid gray;
+      padding-left: 10%;
+      padding-right: 10%;
+      margin-top: -2%;
+
+    }
+
+    .r1 {
+      margin-top: -12%;
+    }
+
+    .bu1 {
+      padding: 2%;
+      padding-left: 8%;
+      padding-right: 8%;
+      margin-left: 30%;
+      margin-bottom: 5%;
+      font-size: 20px;
+
+    }
+
+    .b12 {
+      background-color: white;
+      border: 1px solid gray;
+      padding-left: 10%;
+      padding-right: 10%;
+      margin-top: -2%;
+    }
+
+    .b13 {
+      margin-top: -36%;
+    }
+
+    .b14 {
+      background-color: white;
+      border: 1px solid gray;
+      padding-left: 10%;
+      padding-right: 10%;
+      margin-top: -67%;
+
+    }
+
+    .tt1 {
+      background-color: #fff;
+    }
+
+    .tt1:hover {
+
+      /*box-shadow: 0 0 6px 6px #888;*/
+      box-shadow: -2px 0px 30px 8px #888;
+    }
+
+    .cell {
+      width: 6%;
+      border: 1px solid #D9D8D1;
+      text-align: center;
+      color: #2E6499;
+    }
+
+    .cell1 {
+      width: 8%;
+      border: 1px solid #D9D8D1;
+      text-align: center;
+      color: #2E6499;
+    }
+
+    .cell td small {
+      color: gray;
+    }
+
+    .ig {
+      padding-left: 10%;
+      padding-right: 3%;
+      display: inline-block;
+    }
+
+    /*.list1 ol{
+      
+  }*/
+    .list1 li {
+      padding-top: 1%;
+    }
+
+    .list2 p {
+
+      padding-top: 1%;
+
+    }
+
+    .div1 {
+      border: 1px solid gray;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation
+    ==========================================-->
+  <div id="navbar">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logo2.jpg" style="height: 180%;width: 170%"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse-1" style="padding-right: 3%;font-weight: bold;font-size: 16px; font-family: " Times New Roman", Times, serif;">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Money Store</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="loan.html">Loan</a></li>
+              <li><a href="investment.html">Investment</a></li>
+              <li><a href="insurance.html">Insurance</a></li>
+              <li><a href="cards.html">Cards</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apply<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Loan</a>
+                <ul class="dropdown-menu">
+                  <!--  <li class="kopie"><a href="#">loan</a></li> -->
+                  <li><a href="home_form.html">Home loan</a></li>
+                  <li><a href="car_form.html">Car loan</a></li>
+                  <li><a href="personal_form.html">Personal loan</a></li>
+                  <li><a href="gold_form.html">Gold loan</a></li>
+                  <li><a href="business_form.html">Business loan</a></li>
+                  <li><a href="education_form.html">Education loan</a></li>
+                </ul>
+              </li>
+              <li class="dropdown dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cards</a>
+                <ul class="dropdown-menu">
+                  <!--  <li class="kopie"><a href="#">Cards</a></li> -->
+                  <li><a href="credit_form.html">Credit Card</a></li>
+                  <li><a href="debit_form.html">Debit Card</a></li>
+                </ul>
+              </li>
+              <li class="dropdown dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Insurance</a>
+                <ul class="dropdown-menu">
+                  <li><a href="home_insurance_form.html">Home Insurance</a></li>
+                  <li><a href="child_insurance.html">Child Insurance</a></li>
+                  <li><a href="retirement_insurance_form.html">Retirement Insurance</a></li>
+                  <li><a href="car_insurance_form.html">Car Insurance</a></li>
+                  <li><a href="two_wheeler_insurance_form.html">Two Wheeler Insurance</a></li>
+                  <li><a href="life_insurance_form.html">Life Insurance</a></li>
+                  <li><a href="health_insurance_form.html">Health Insurance</a></li>
+                  <li><a href="critical.html">Critical Health Insurance</a></li>
+                </ul>
+              </li>
+              <li class="dropdown dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Investment</a>
+                <ul class="dropdown-menu">
+                  <!--  <li class="kopie"><a href="#">Investment</a></li> -->
+                  <li><a href="mutual_fund_form.html">Mutual Fund</a></li>
+                  <li><a href="fixed_deposite_form.html">Fixed Deposite</a></li>
+                  <li><a href="saving_account_form.html">Saving Account</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <!-- <li class="kopie"><a href="#">Dropdown2</a></li> -->
+              <li><a href="emi.html">EMI Calculator</a></li>
+              <li><a href="rd.html">RD Calculator</a></li>
+              <li><a href="fd.html">FD Calculator</a></li>
+              <li><a href="sip_calculator.html">SIP Calculator</a></li>
+            </ul>
+          </li>
+          <li><a href="reach_to_us.html">Reach To Us</a></li>
+          <!-- <li><a href="login.html">Log in</a></li> -->
+
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+  </div>
+
+
+  <!-- Home Page
+    ==========================================-->
+  <div id="tf-home" class="text-center">
+    <div class="overlay">
+      <div class="content">
+        <div class="row" style="padding-left: 8%">
+          <div class="table-responsive">
+            <table class="tt1 table table-hover">
+              <tr>
+                <td class="cell1" style="padding-top: 2%">
+                  <img src="img\hdfcs.png" class="ig">
+                  <small style="display: inline-block;color: #2E6499 ;margin-top: -1%">HDBFS
+                    <br>
+                    <img src="img\star1.jpg" style="display: inline-block;"><br>4.0/5.0 11833 users
+                  </small>
+                  <p style="margin-left: -70%;padding-bottom: -0.20%">
+                    <img src="img\Untitled.png"><a href="#myModal" data-toggle="modal" data-target="#myModal"> Details</a>
+                  </p>
+                </td>
+
+                <td class="cell" style=" padding-top: 2%;">
+                  15.95% - 18.95%<br>
+                  <small style="color: gray">Fixed</small>
+                </td>
+                <td class="cell" style=" padding-top: 2%;">
+                  2%<br>
+                  <small style="color: gray">One time fee</small>
+                </td>
+                <td class="cell" style=" padding-top: 2%;">
+                  <i class="fa fa-inr"></i>
+                  20L Max
+                </td>
+                <td class="cell" style=" padding-top: 2%;">
+                  1-3 years
+                </td>
+                <td class="cell"><a class="btn" href="#" style="border: 1px solid  #1abc9c;background-color:#1abc9c;color: white;margin-top: 10%">Get Quote</a></td>
+              </tr>
+            </table>
+          </div>
+        </div><!-- end row -->
+
+
+
+
+
+
+
+
+        <div class="row" style="padding-left: 8%">
+          <div class="table-responsive">
+            <table class="tt1 table table-hover">
+              <tr>
+                <td class="cell1" style="padding-top: 2%">
+                  <img src="img\axis1.gif" class="ig">
+                  <small style="display: inline-block;color: #2E6499 ;margin-top: -1%">AXIS
+                    <br>
+                    <img src="img\star1.jpg" style="display: inline-block;"><br>4.0/5.0 11833 users
+                  </small>
+                  <p style="margin-left: -70%;padding-bottom: -0.20%">
+                    <img src="img\Untitled.png"><a href="#myModal1" data-toggle="modal" data-target="#myModal1"> Details</a>
+                  </p>
+                </td>
+
+                <td class="cell" style=" padding-top: 2%;">
+                  15.95% - 18.95%<br>
+                  <small style="color: gray">Fixed</small>
+                </td>
+                <td class="cell" style=" padding-top: 2%;">
+                  2%<br>
+                  <small style="color: gray">One time fee</small>
+                </td>
+                <td class="cell" style=" padding-top: 2%;">
+                  <i class="fa fa-inr"></i>
+                  20L Max
+                </td>
+                <td class="cell" style=" padding-top: 2%;">
+                  1-3 years
+                </td>
+                <td class="cell"><a class="btn" href="#" style="border: 1px solid  #1abc9c;background-color:#1abc9c;color: white;margin-top: 10%">Get Quote</a></td>
+              </tr>
+            </table>
+          </div>
+        </div><!-- end row -->
+
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer ==================================================== -->
+  <nav id="footer">
+    <div class="container">
+      <div class="pull-left fnav wow fadeInLeft">
+        <p>ALL RIGHTS RESERVED. COPYRIGHT © 2017. Developed by<b style="font-size: 15px">Inalphabet Corporation .</b></a></p>
+        <!--  <span><i class="fa fa-envelope" aria-hidden="true" style="font-size: 16px"></i></span><span style="padding-left: 2%">info@antelopetech.in</span>
+                <span style="padding-left: 10px"><i class="fa fa-phone" aria-hidden="true" style="font-size: 16px"></i></span><span style="padding-left: 2%">0253-2591723</span> -->
+      </div>
+      <div class="pull-right fnav wow fadeInRight">
+        <center><b>Address</b></center>
+        <span>Inalphabet Corporation ,<br> Pune</span>
+      </div>
+      <!--  <div class="pull-right fnav wow fadeInRight">
+                <ul class="footer-social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div> -->
+    </div>
+  </nav>
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script> -->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/SmoothScroll.js"></script>
+  <script type="text/javascript" src="js/jquery.isotope.js"></script>
+
+
+  <script src="js/owl.carousel.js"></script>
+
+  <!-- Javascripts
+    ================================================== -->
+  <script type="text/javascript" src="js/main.js"></script>
+  <!-- animation
+     ================================================== -->
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript">
+    new WOW().init()
+  </script>
+
+</body>
+
+</html>
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <div id="tab">
+          <div class="container panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" style="border: 1px solid #C4BEBE;padding-top: 2%;padding-bottom: 2%;background-color: #F5F1F1;width: 800px">
+
+
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#features">Features</a></li>
+              <li><a data-toggle="tab" href="#review">Review</a></li>
+
+            </ul>
+
+            <div class="tab-content">
+              <div id="features" class="tab-pane fade in active">
+                <div>
+                  <div>
+                    <div class="col-md-4">
+                      <small>What you'll love</small>
+                      <ol class="list1" style="  border-top: 1px solid #C4BEBE;">
+                        <li>
+                          <small>No guarantor required</small>
+                        </li>
+                        <li>
+                          <small>Conditional pre-closure and part payment - only after 12 months</small>
+                        </li>
+                      </ol>
+                    </div>
+
+
+
+                    <div class="col-md-4">
+                      <small> Documents</small>
+                      <ol class="list1" style="  border-top: 1px solid #C4BEBE;">
+                        <li>
+                          <small>KYC-PAN, address & ID proof</small>
+                        </li>
+                        <li>
+                          <small>Income proof, bank statement and one photograph</small>
+                        </li>
+                      </ol>
+                    </div>
+
+
+                    <!--  <div class="col-md-4">
+                                  <small >Perks</small>
+                                  <ol class="list1" style="  border-top: 1px solid #C4BEBE;">
+                                    <li>
+                                      <small>Door step service</small>
+                                    </li>
+                                    <li>
+                                      <small>Part-payment available</small>
+                                    </li>
+                                    <li>
+                                      <small>Door step service</small>
+                                    </li>
+                                    <li>
+                                      <small>Part-payment available</small>
+                                    </li>
+                                  </ol>
+                                </div> -->
+                  </div>
+
+                  <div class="list2">
+                    <div class="col-md-6">
+                      <small>Fees &amp; Charges</small>
+                      <p style="  border-top: 1px solid #C4BEBE;">
+
+                        <small>Preclosure fee = Up to 2% on total principal outstanding</small>
+                      </p>
+                      <p>
+                        <small>Part payment fee = <i class="fa fa-inr"></i>0</small>
+
+                      </p>
+
+
+                    </div>
+
+                    <!--  <div class="col-md-6">
+                                  <small >Good to Know</small>
+                                  <p  style="  border-top: 1px solid #C4BEBE;">
+                                    
+                                      <small>Branches</small>
+                                    </p>
+                                    <p>
+                                      <small>42</small>
+                                      
+                                    </p>
+                                    
+                                </div> -->
+                  </div>
+
+                  <div>
+                    <div class="col-md-6">
+                      <small>Eligibility Criteria</small>
+                      <ol class="list1" style="  border-top: 1px solid #C4BEBE;">
+                        <li>
+                          <small>Age at least 23 and less than 60 at the time of loan maturity for Salaried</small>
+                        </li>
+                        <li>
+                          <small>Age at least 23 and less than 65 at the time of loan maturity for Self-Employed</small>
+
+                        </li>
+                        <li>
+                          <small>Minimum Monthly Income Rs.30,000</small>
+
+                        </li>
+                      </ol>
+                    </div>
+                  </div><br><br>
+                </div>
+                <!-- end feature -->
+
+              </div>
+              <div id="review" class="tab-pane fade">
+                <div>
+                  <div class="col-md-6">
+                    <small>Customer Reviews</small>
+
+                    <p style="  border-top: 1px solid #C4BEBE;"><b>Simple and clear:-</b></p>
+                    <p><small>I had a good experience. Information given was simple and clear.</small></p>
+
+
+                    <p><b>Seamless Affair:-</b></p>
+                    <p><small>My experience with Citibank in a word - 'awesome'. The process was simple and quick,thanks to the reliable customer service and minimal documentation.</small></p>
+
+
+
+
+                  </div>
+
+
+                </div><!-- end review -->
+
+
+              </div><!-- end tab-content -->
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <div id="tab">
+          <div class="container panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" style="border: 1px solid #C4BEBE;padding-top: 2%;padding-bottom: 2%;background-color: #F5F1F1;width: 800px">
+
+
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#features">Features</a></li>
+              <li><a data-toggle="tab" href="#review">Review</a></li>
+
+            </ul>
+
+            <div class="tab-content">
+              <div id="features" class="tab-pane fade in active">
+                <div>
+                  <div>
+                    <div class="col-md-4">
+                      <small>What you'll love</small>
+                      <ol class="list1" style="  border-top: 1px solid #C4BEBE;">
+                        <li>
+                          <small>No guarantor required</small>
+                        </li>
+                        <li>
+                          <small>Conditional pre-closure and part payment - only after 12 months</small>
+                        </li>
+                      </ol>
+                    </div>
+
+
+
+                    <div class="col-md-4">
+                      <small> Documents</small>
+                      <ol class="list1" style="  border-top: 1px solid #C4BEBE;">
+                        <li>
+                          <small>KYC-PAN, address & ID proof</small>
+                        </li>
+                        <li>
+                          <small>Income proof, bank statement and one photograph</small>
+                        </li>
+                      </ol>
+                    </div>
+
+
+                    <div class="col-md-4">
+                      <small>Perks</small>
+                      <ol class="list1" style="  border-top: 1px solid #C4BEBE;">
+                        <li>
+                          <small>Door step service</small>
+                        </li>
+                        <li>
+                          <small>Part-payment available</small>
+                        </li>
+                        <li>
+                          <small>Door step service</small>
+                        </li>
+                        <li>
+                          <small>Part-payment available</small>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+
+                  <div class="list2">
+                    <div class="col-md-6">
+                      <small>Fees &amp; Charges</small>
+                      <p style="  border-top: 1px solid #C4BEBE;">
+
+                        <small>Preclosure fee = Up to 2% on total principal outstanding</small>
+                      </p>
+                      <p>
+                        <small>Part payment fee = <i class="fa fa-inr"></i>0</small>
+
+                      </p>
+
+
+                    </div>
+
+                    <!--  <div class="col-md-6">
+                                  <small >Good to Know</small>
+                                  <p  style="  border-top: 1px solid #C4BEBE;">
+                                    
+                                      <small>Branches</small>
+                                    </p>
+                                    <p>
+                                      <small>42</small>
+                                      
+                                    </p>
+                                    
+                                </div> -->
+                  </div>
+
+                  <div>
+                    <div class="col-md-6">
+                      <small>Eligibility Criteria</small>
+                      <ol class="list1" style="  border-top: 1px solid #C4BEBE;">
+                        <li>
+                          <small>Age at least 23 and less than 60 at the time of loan maturity for Salaried</small>
+                        </li>
+                        <li>
+                          <small>Age at least 23 and less than 65 at the time of loan maturity for Self-Employed</small>
+
+                        </li>
+                        <li>
+                          <small>Minimum Monthly Income Rs.30,000</small>
+
+                        </li>
+                      </ol>
+                    </div>
+                  </div><br><br>
+                </div>
+                <!-- end feature -->
+
+              </div>
+              <div id="review" class="tab-pane fade">
+                <div>
+                  <div class="col-md-6">
+                    <small>Customer Reviews</small>
+
+                    <p style="  border-top: 1px solid #C4BEBE;"><b>Simple and clear:-</b></p>
+                    <p><small>I had a good experience. Information given was simple and clear.</small></p>
+
+
+                    <p><b>Seamless Affair:-</b></p>
+                    <p><small>My experience with Citibank in a word - 'awesome'. The process was simple and quick,thanks to the reliable customer service and minimal documentation.</small></p>
+
+
+
+
+                  </div>
+
+
+                </div><!-- end review -->
+
+
+              </div><!-- end tab-content -->
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
